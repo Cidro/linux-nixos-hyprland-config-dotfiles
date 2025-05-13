@@ -13,7 +13,7 @@
 
     # If using resolvconf:
     resolvconf = {
-      enable = true; # FIXME remember to delete /etc/resolv.conf if you disable `resolvconf`
+      enable = true; 
       useLocalResolver = true;
     };
 
