@@ -25,7 +25,7 @@
     cool-retro-term
 
     starship
-    nvim
+    neovim
 
     qutebrowser
     zathura
