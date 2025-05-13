@@ -2,15 +2,15 @@
 
 {
   services.xserver = {
-    xkb.layout = "us,ua,ru";
+    xkb.layout = "us,es";
     xkb.options = "grp:alt_shift_toggle";
   };
 
-  environment.systemPackages = with pkgs; [
-    klavaro
-    gtypist
-    via
-  ];
+  # environment.systemPackages = with pkgs; [
+  #   klavaro
+  #   gtypist
+  #   via
+  # ];
 
   # services.kanata = {
   #   enable = true;

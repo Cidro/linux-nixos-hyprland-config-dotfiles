@@ -1,5 +1,5 @@
 {
-  description = "XNM's NixOS Configuration";
+  description = "Cidro's NixOS Configuration";
 
   inputs = {
       nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -9,19 +9,19 @@
 
   outputs = { nixpkgs, ... } @ inputs:
   {
-    nixosConfigurations.isitreal-laptop = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.pablo-laptop = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       modules = [
         ./configuration.nix
         ./hardware-configuration.nix
-        ./nvidia.nix
+        # ./nvidia.nix
         # ./disable-nvidia.nix
         ./opengl.nix
         # ./fingerprint-scanner.nix
         # ./clamav-scanner.nix
-        ./yubikey.nix
+        # ./yubikey.nix
         ./sound.nix
-        ./usb.nix
+        # ./usb.nix
         ./keyboard.nix
         ./time.nix
         ./swap.nix
@@ -37,7 +37,7 @@
         ./theme.nix
         ./internationalisation.nix
         ./fonts.nix
-        ./security-services.nix
+        # ./security-services.nix
         ./services.nix
         # ./printing.nix
         # ./gnome.nix
@@ -47,21 +47,21 @@
         ./networking.nix
         # ./mac-randomize.nix
         # ./open-ssh.nix
-        ./mosh.nix
-        ./firewall.nix
-        ./dns.nix
-        ./vpn.nix
+        # ./mosh.nix
+        # ./firewall.nix
+        # ./dns.nix
+        # ./vpn.nix
         ./users.nix
         ./virtualisation.nix
         ./programming-languages.nix
         ./lsp.nix
-        ./rust.nix
-        ./wasm.nix
+        #./rust.nix
+        #./wasm.nix
         ./info-fetchers.nix
         ./utils.nix
         ./terminal-utils.nix
-        ./llm.nix
-        ./work.nix
+        #./llm.nix
+        #./work.nix
       ];
     };
   };

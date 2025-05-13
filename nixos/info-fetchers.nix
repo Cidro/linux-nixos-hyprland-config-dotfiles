@@ -11,7 +11,6 @@
     octofetch
     htop
     bottom
-    btop
     zfxtop
     kmon
 
